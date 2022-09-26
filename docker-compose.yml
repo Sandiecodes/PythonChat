@@ -2,8 +2,22 @@ version: "3.9"
 services:
   pythonserver:
     build: .
-    container_name: pythonserver_TEST
+    container_name: pythonserver
+    command: flask run --host=0.0.0.0
     ports:
-      - "8000:8000"
+    - "8000:8000"
+    volumes:
+    - .:/usr/src/app
+    stdin_open: true
+    tty: true
+  clientpython1:
+    build: .
+    container_name: clientpython1
+    ports:
+    - "8000:8000"
+    volumes:
+    - .:/usr/src/app
+    stdin_open: true
+    tty: true
 
     
