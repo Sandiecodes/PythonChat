@@ -2,9 +2,11 @@ import socket
 
 def socket_server():
     #Get hostname
+    #host = '0.0.0.0'
+    #port = 54321
     host = socket.gethostname()
     #Give port
-    port = 8000
+    port = 8080
     
     #Instance of server
     chat_server = socket.socket()
