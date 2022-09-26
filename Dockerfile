@@ -5,8 +5,8 @@ FROM python:latest
 WORKDIR /usr/src/app
 
 COPY . .
-
-CMD ["/bin/bash"]
+RUN ls
+ENTRYPOINT [ "python3","socketserver.py" ]
 #pull python image
 
 #FROM python:3.8-alpine

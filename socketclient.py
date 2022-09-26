@@ -5,7 +5,7 @@ def socket_client():
     #Get hostname
     host = socket.gethostname()  
     #Port
-    port = 5000 
+    port = 8000 
     #instantiate
     chat_client = socket.socket()
     # connect to the server  

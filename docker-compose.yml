@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  pythonserver:
+    build: .
+    container_name: pythonserver_TEST
+    ports:
+      - "8000:8000"
+
+    
